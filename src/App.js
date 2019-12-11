@@ -9,6 +9,7 @@ import Home from './components/pages/Home'
 import Buffet from './components/pages/Buffet'
 import Jasons from './components/pages/Jasons'
 import NotFoundPage from './components/pages/NotFoundPage'
+import Restaurants from './components/Restaurants'
 
 class App extends Component {
   render () {
@@ -16,7 +17,7 @@ class App extends Component {
       <div>
         <Navbar />
         <Switch>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/' component={Restaurants} />
           <Route path='/buffet' component={Buffet} />
           <Route path='/jasons' component={Jasons} />
           <Route component={NotFoundPage} />

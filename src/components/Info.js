@@ -11,6 +11,7 @@ class Info extends Component {
             return (
               <div className='col-10 col-lg-4 mx-auto mb-5'>
                 <div className='card' style={{ width: '18rem' }}>
+                  <img src='' alt={item.name} className='card-img-top' />
             <div className='card-header'>{item.day}</div>
                   <div className='card-body'>
                     <h3 className='card-title text-uppercase'>{item.name}</h3>
