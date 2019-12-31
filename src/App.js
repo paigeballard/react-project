@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Pagination from './components/Pagination'
 import Navbar from './components/layouts/Navbar'
 // react router import
 import { Switch, Route } from 'react-router-dom'
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path='/restaurant/:id' component={Restaurant} />
           <Route component={NotFoundPage} />
         </Switch>
+        <Pagination postsPerPage totalPosts />
       </div>
     )
   }

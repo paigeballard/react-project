@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { cardInfo } from '../data'
 import Card from '../Card'
-import Calendar from './Calendar'
+// import Calendar from './Calendar'
 
 class Home extends Component {
   render () {
@@ -12,7 +12,7 @@ class Home extends Component {
             <Card {...item} />
           )}
         </div>
-        <Calendar />
+        {/* <Calendar /> */}
       </div>
     )
   }

@@ -24,17 +24,17 @@ class Info extends Component {
     return <div className='col-10 col-lg-4 mx-auto mb-5'>
       <div className='card' style={{ width: '18rem' }}>
         <div className='card-header'>
-        <h3 className='card-title text-uppercase'>{item.day}</h3>
+          <h3 className='card-title text-uppercase'>{item.day}</h3>
           <img src={item.logo} alt={item.day} className='card-img-top' />
-        </div> 
+        </div>
         <div className='card-body'>
           {/* <h3 className='card-title text-uppercase'>{item.day}</h3> */}
           <h5 className='card-title'>{item.description}</h5>
         </div>
         <Link className='btn btn-secondary' to='/restaurant'>Menu</Link>
       </div>
-    </div>
-  } 
-} 
+                   </div>
+  }
+}
 
 export default Info

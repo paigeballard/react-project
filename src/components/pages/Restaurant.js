@@ -25,13 +25,14 @@ class Restaurant extends React.Component {
     // console.log( this.data(this.state.id))
     return (
       <div>
-  <p>{menu.day} {menu.date}</p>
-        <p>{menu.name}</p>
-        <p>{menu.description}</p>
+  <h3>{menu.day} {menu.date}</h3>
+        <h1>{menu.name}</h1>
         {menu.todaysMenu.map(item => {
           return <div>
-            <p>{item.name}</p>
+            <ul>
+            <h3>{item.name}</h3>
             <p>{item.description}</p>
+            </ul>
           </div>
         })}
       </div>
