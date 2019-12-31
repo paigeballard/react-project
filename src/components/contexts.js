@@ -6,7 +6,7 @@ const InfoContext = React.createContext()
 // provider
 // consumer
 
-class InfoProvider extends Component {
+class CardContext extends Component {
     state = {
         info: cardInfo
     }
@@ -14,20 +14,20 @@ class InfoProvider extends Component {
     getItem = id => {
         const item = this.state.info.find(item => item.id === id)
         return item;
-    }
+    } 
 
     handleDetail = id => {
         const item = this.getItem(id)
         this.setState(() => {
             return {
                 detailInfo: item
-            }
-        })
-    }
+            } 
+        }) 
+    } 
 
   render () {
     return (
-      <InfoContext.Provider value={{
+     <InfoContext.Provider value={{
           info: this.state.info
       }}>
         {this.props.children}
@@ -38,4 +38,4 @@ class InfoProvider extends Component {
 
 const InfoConsumer = InfoContext.Consumer
 
-export { InfoProvider, InfoConsumer }
+export { CardContext, InfoConsumer }

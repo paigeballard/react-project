@@ -1,16 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import { InfoProvider } from './components/contexts'
+import { CardContext } from './components/contexts'
 import './index.css'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
-  <InfoProvider>
+  <CardContext>
     <Router>
       <App />
     </Router>
-  </InfoProvider>,
+  </CardContext>,
   document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
