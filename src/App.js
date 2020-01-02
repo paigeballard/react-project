@@ -11,21 +11,54 @@ import Jasons from './components/pages/Jasons'
 import NotFoundPage from './components/pages/NotFoundPage'
 import Restaurant from './components/pages/Restaurant'
 import MyCal from './components/pages/Calendar'
-
+import fire from './config/Fire'
+import Login from './components/pages/Login'
 
 class App extends Component {
+  constructor () {
+    super()
+    this.state = ({
+      user: null,
+      currentPage: [1],
+      cardsPerPage: [5]
+    })
+    this.authListner = this.authListner.bind(this)
+  }
+
+  componentDidMount () {
+    this.authListner()
+  }
+
+  authListner () {
+    fire.auth().onAuthStateChanged((user) => {
+      console.log(user)
+      if (user) {
+        this.setState({ user })
+        localStorage.setItem('user', user.uid)
+      } else {
+        this.setState({ user: null })
+        localStorage.removeItem('user')
+      }
+    })
+  }
+
+  // indexOfLastCards = currentPage * cardsPerPage
+  // indexOfFirstCard = indexOfLastCards - cardsPerPage
+  // currentPage = cards.slice(this.indexOfFirstCard, this.indexOfLastCards)
+
   render () {
     return (
       <div>
         <Navbar />
         <Switch>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/' component={Login} />
+          <Route path='/home' component={Home} />
           <Route path='/calendar' component={MyCal} />
           <Route path='/jasons' component={Jasons} />
           <Route path='/restaurant/:id' component={Restaurant} />
           <Route component={NotFoundPage} />
         </Switch>
-        <Pagination postsPerPage totalPosts />
+        <Pagination CardsPerPage totalCards />
       </div>
     )
   }
