@@ -10,7 +10,7 @@ import Jasons from './components/pages/Jasons'
 import NotFoundPage from './components/pages/NotFoundPage'
 import Restaurant from './components/pages/Restaurant'
 import MyCal from './components/pages/Calendar'
-import fire from './config/Fire'
+// import fire from './config/Fire'
 import Login from './components/pages/Login'
 
 
@@ -20,41 +20,41 @@ class App extends Component {
     this.state = ({
       user: null
     })
-    this.authListner = this.authListner.bind(this)
+    // this.authListner = this.authListner.bind(this)
   }
 
-  componentDidMount () {
-    this.authListner()
-  }
+  // componentDidMount () {
+  //   this.authListner()
+  // }
 
-  authListner () {
-    fire.auth().onAuthStateChanged((user) => {
-      console.log('user', user)
-      if (user) {
-        this.setState({ user })
-        window.localStorage.setItem('user', user.uid)
-      } else {
-        this.setState({ user: null })
-        window.localStorage.removeItem('user')
-      }
-    })
-  }
+  // authListner () {
+  //   fire.auth().onAuthStateChanged((user) => {
+  //     console.log('user', user)
+  //     if (user) {
+  //       this.setState({ user })
+  //       window.localStorage.setItem('user', user.uid)
+  //     } else {
+  //       this.setState({ user: null })
+  //       window.localStorage.removeItem('user')
+  //     }
+  //   })
+  // }
 
   render () {
-    const PrivateRoute = ({ component: Component, ...props }) => (
-      <Route {...props} render={(allProps) => this.state.user ? <Component {...allProps} /> : <Redirect to='./login' />} />
-    )
+    // const PrivateRoute = ({ component: Component, ...props }) => (
+    //   <Route {...props} render={(allProps) => this.state.user ? <Component {...allProps} /> : <Redirect to='./login' />} />
+    // )
     return (
       <div>
+        {/* {this.state.user ? <Home /> : <Login />} */}
         <Navbar />
         <Switch>
-          {/* {this.state.user ? <Home /> : <Login />} */}
           <Route path='/login' component={Login} />
-          <PrivateRoute exact path='/home' component={Home} />
-          <PrivateRoute exact path='/' component={Home} />
-          <PrivateRoute path='/calendar' component={MyCal} />
-          <PrivateRoute path='/jasons' component={Jasons} />
-          <PrivateRoute path='/restaurant/:id' component={Restaurant} />
+          <Route exact path='/home' component={Home} />
+          <Route exact path='/' component={Home} />
+          <Route path='/calendar' component={MyCal} />
+          <Route path='/jasons' component={Jasons} />
+          <Route path='/restaurant/:id' component={Restaurant} />
           <Route component={NotFoundPage} />
         </Switch>
       </div>

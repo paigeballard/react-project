@@ -2,16 +2,17 @@ import React, { Component } from 'react'
 import { cardInfo } from '../data'
 import Card from '../Card'
 import fire from '../../config/Fire'
-import Pagination from '../Pagination'
+// import Pagination from '../Pagination'
 
 class Home extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.logout = this.logout.bind(this)
   }
 
   logout () {
     fire.auth().signOut()
+    console.log('click happened')
   }
 
   render () {
@@ -23,7 +24,7 @@ class Home extends Component {
           )}
         </div>
         <button onClick={this.logout}>Logout</button>
-        <Pagination totalCards={cardInfo.length} />
+        {/* <Pagination totalCards={cardInfo.length} /> */}
       </div>
     )
   }

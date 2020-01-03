@@ -50,3 +50,29 @@
 // }
 
 // export default Niko
+// import React from 'react'
+
+// const Pagination = ({ totalCards }) => {
+//   const pageNumbers = []
+//   const cardsPerPage = 5
+
+//   for (let i = 1; i <= Math.ceil(cardsPerPage / totalCards); i++) {
+//     pageNumbers.push(i)
+//   }
+
+//   return (
+//     <nav>
+//       <ul className='pagination'>
+//         {pageNumbers.map(number => (
+//           <li key={number} className='page-item'>
+//             <a href='!#' className='page-link'>
+//               {number}
+//             </a>
+//           </li>
+//         ))}
+//       </ul>
+//     </nav>
+//   )
+// }
+
+// export default Pagination

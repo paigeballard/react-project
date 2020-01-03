@@ -624,5 +624,593 @@ export const cardInfo = [
         description: 'Hummus, Pita Bread and French Fries'
       }
     ]
-  }
+  },
+  {
+    id: 11,
+    day: 'Monday, January 20, 2020',
+    name: 'Govindas',
+    description: 'Vegetarian Indian',
+    url: '',
+    logo: '.././logos/govin.png',
+    todaysMenu: [
+      {
+        name: 'House Salad',
+        description: 'Made with house made dressing'
+      },
+      {
+        name: 'Dal Makhani',
+        description: 'Lentil Soup, Vegan, Gluten Friendly Black Urad Dal & Rajma cooked with Oil'
+      },
+      {
+        name: 'Malai Kofta',
+        description: 'Cauliflower/Carrot/Potatoes/Tomatoes/Cheese cooked with Oil'
+      },
+      {
+        name: 'Saag Paneer',
+        description: 'Gluten Friendly Paneer Cheese with Spinach in creamy sauce'
+      },
+      {
+        name: 'Vegetable Pakoras',
+        description: 'Samosas with fresh-made Mint Chutney'
+      },
+      {
+        name: 'Rice Pilaf',
+        description: ''
+      },
+      {
+        name: 'Papad',
+        description: 'thin, crisp, round flatbread'
+      },
+      {
+        name: 'Chapatis',
+        description: 'fresh roti/puri (flat whole wheat flour breads) daily'
+      }
+    ]
+  },
+  {
+    id: 12,
+    day: 'Tuesday, January 21, 2020',
+    name: 'Zoes Kitchen',
+    description: 'Greek',
+    url: '',
+    logo: '.././logos/zoes.png',
+    todaysMenu: [
+      {
+        name: 'Greek Salad',
+        description: 'Tomatoes, cucumbers, bell peppers, olives, onions and feta over potato salad; served with pita bread.'
+      },
+      {
+        name: 'Hummus',
+        description: 'Classic, Basil pesto or Harissa Red Pepper - served with pita bread, pita chips and cucumbers'
+      },
+      {
+        name: 'Kabobs',
+        description: 'Chicken, Beef or Shrimp - all served with roasted tomatoes, peppers and onions'
+      },
+      {
+        name: 'Spinach and Mushroom Piadina',
+        description: 'Grilled Italian flatbread sandwich with fresh spinach, mushrooms, feta, parmesan cheese and fresh mozzarella'
+      },
+      {
+        name: 'Tumeric Rice',
+        description: ''
+      },
+      {
+        name: 'Roasted Vegetables',
+        description: ''
+      },
+      {
+        name: 'Braised White Beans',
+        description: ''
+      },
+      {
+        name: 'Baked Falafel',
+        description: ''
+      }
+    ]
+  },
+  {
+    id: 13,
+    day: 'Wednesday, January 22, 2020',
+    name: 'Bucca di Beppo',
+    description: 'Italian',
+    url: '',
+    logo: '.././logos/buca.png',
+    todaysMenu: [
+      {
+        name: 'Apple Gorgonzola Salad',
+        description: 'Granny Smith apples, spiced walnuts, dried cranberries & Gorgonzola tossed with mixed lettuce in our signature Italian vinaigrette'
+      },
+      {
+        name: 'Mixed Greens Salad',
+        description: 'Mixed lettuce tossed in our signature Italian vinaigrette with Roma tomatoes, red onions, pepperoncini & black & green olives '
+      },
+      {
+        name: 'Chicken Limone',
+        description: 'Sautéed chicken in lemon butter sauce and capers'
+      },
+      {
+        name: 'Eggplant Parmigiana',
+        description: 'Topped with our homemade marinara sauce, roma tomatoes, basil and mozzarella'
+      },
+      {
+        name: 'Pasta Primavera',
+        description: 'Penne pasta, homemande marinara, broccoli, red & green bell peppers and sautéed onions'
+      },
+      {
+        name: 'Shrimp Florentine',
+        description: 'Garlic shrimp, Roma tomatoes & spinach with linguine in garlic butter sauce'
+      },
+      {
+        name: 'Salmon Sorrento',
+        description: 'Pan seared salmon with capers and roma tomatoes in lemon butter sauce'
+      },
+      {
+        name: 'Spaghetti and Meatballs',
+        description: 'Our famous half-pound meatballs with our homemade marinara sauce'
+      },
+      {
+        name: 'Sausage and Peppers',
+        description: ''
+      },
+      {
+        name: 'Rosemary Mashed Potaotes',
+        description: ''
+      },
+      {
+        name: 'Steamed Boccoli',
+        description: ''
+      },
+      {
+        name: 'Green Beans',
+        description: ''
+      }
+    ]
+  },
+  {
+    id: 14,
+    day: 'Thursday, January 23, 2020',
+    name: 'Maine-ly',
+    description: 'Lobster Rolls and Sandwiches',
+    url: '',
+    logo: '.././logos/main.jpg',
+    todaysMenu: [
+      {
+        name: 'Lobster Roll',
+        description: 'Fresh steamed lobster served with mayo on a butter toasted roll.'
+      },
+      {
+        name: 'Crab Roll',
+        description: 'Snow crab served with mayo on a butter toasted roll'
+      },
+      {
+        name: 'Turkey Sandwich',
+        description: ''
+      },
+      {
+        name: 'Ham Sandwich',
+        description: ''
+      },
+      {
+        name: 'Tuna Sandwich',
+        description: ''
+      },
+      {
+        name: 'Veggie Sandwich',
+        description: ''
+      },
+      {
+        name: 'BLT',
+        description: ''
+      },
+      {
+        name: 'Spicy Salami',
+        description: ''
+      },
+      {
+        name: 'Roast Beef',
+        description: ''
+      },
+      {
+        name: 'Grilled Chicken',
+        description: ''
+      },
+      {
+        name: 'Meatball and Parm Sub',
+        description: ''
+      },
+      {
+        name: 'Brocoli Cheddar Soup',
+        description: ''
+      },
+      {
+        name: 'Roasted Garlic Tomato Soup',
+        description: ''
+      },
+      {
+        name: 'Minestone Soup',
+        description: ''
+      },
+      {
+        name: 'Assorted Chips',
+        description: ''
+      },
+      {
+        name: 'Home-made Whoopie Pies',
+        description: 'Fresh homemade chocolate outside with sweet marshmallow middle.'
+      }
+    ]
+  },
+  {
+    id: 15,
+    day: 'Friday, January 24, 2020',
+    name: 'Chuys',
+    description: 'Tex-Mex',
+    url: '',
+    logo: '.././logos/chuys.png',
+    todaysMenu: [
+      {
+        name: 'Chips and Dips',
+        description: 'Salsa, Queso, Creamy Jalapeno Dip and Guacamole'
+      },
+      {
+        name: 'Mexi Cobb Salad',
+        description: 'Fajita chicken, green chiles, cheese, avocados & tomatoes.'
+      },
+      {
+        name: 'Fajita Beef Panchos (nachos)',
+        description: ''
+      },
+      {
+        name: 'Fajita Chicken Panchos (nachos)',
+        description: ''
+      },
+      {
+        name: 'Tacos Al Carbon - Beef',
+        description: 'Fajita beef with grilled onions & green chiles in flour tortillas.'
+      },
+      {
+        name: 'Tacos Al Carbon - Chicken',
+        description: 'Fajita chicken with grilled onions & green chiles in flour tortillas.'
+      },
+      {
+        name: 'Baja Fish Tacos',
+        description: 'Flour tortillas with cilantro, red cabbage, Creamy Jalapeño & lightly battered & fried fish'
+      },
+      {
+        name: 'Baja Shrimp Tacos',
+        description: 'Flour tortillas with cilantro, red cabbage, Creamy Jalapeño & lightly battered & fried shrimp'
+      },
+      {
+        name: 'Deluxe Chicken Enchilada',
+        description: 'Roasted chicken & cheese with Deluxe Tomatillo Sauce.'
+      },
+      {
+        name: 'Classic Tex Mex Enchilada',
+        description: 'Straight to you from South Texas. Cheese & red onion with our signature Tex-Mex Sauce.'
+      },
+      {
+        name: 'Chicka Chicka Boom Boom Enchilada',
+        description: 'Roasted chicken & cheese with our fan favorite Boom-Boom Sauce.'
+      },
+      {
+        name: 'Veggie Enchilada',
+        description: 'Blue corn tortillas with spinach, onions, zucchini, yellow squash, red bell peppers, serranos, roasted green chiles, corn & cheese with Ranchero Sauce'
+      },
+      {
+        name: 'Bean and Cheese Burrito',
+        description: 'A flour tortilla stuffed with refried beans, cheese & topped with queso'
+      },
+      {
+        name: 'Fajita Beef Burrito',
+        description: 'A flour tortilla stuffed with refried beans, cheese & fajita beef'
+      },
+      {
+        name: 'Fajita Chicken Burrito',
+        description: 'A flour tortilla stuffed with refried beans, cheese & fajita chicken'
+      },
+      {
+        name: 'Chicken Flautas',
+        description: 'Corn tortillas filled with roasted chicken & cheese, rolled, fried & topped with our smoky Chipotle Sauce. Served with guacamole & sour cream.'
+      },
+      {
+        name: 'Chuychanga',
+        description: 'A flour tortilla filled with roasted chicken, cheese, cilantro & green chiles, deep fried & served with one of our Signature Sauces & a drizzle of sour cream.'
+      },
+      {
+        name: 'Elvis Green Chile Fried Chicken',
+        description: 'A chicken breast breaded with Lay’s® potato chips & fried to a golden brown, served with Green Chile Sauce & cheese. Fat Elvis’s favorite!'
+      },
+      {
+        name: 'Deluxe Beef Quesadilla',
+        description: 'Flour tortillas stuffed with beef, cheese, green chiles & onion. With guacamole, sour cream & pico de gallo.'
+      },
+      {
+        name: 'Deluxe Chicken Quesadilla',
+        description: 'Flour tortillas stuffed with chicken, cheese, green chiles & onion. With guacamole, sour cream & pico de gallo.'
+      }
+    ]
+  },
+  {
+    id: 16,
+    day: 'Monday, January 27, 2020',
+    name: 'Nam Noodles and More',
+    description: 'Vietnamese',
+    url: '',
+    logo: '.././logos/nam.jpg',
+    todaysMenu: [
+      {
+        name: 'Grilled Lemongrass Chicklen Salad',
+        description: 'Chopped mixed greens topped with lemongrass-seasoned grilled chicken breast, served with Miso Ginger dressing.'
+      },
+      {
+        name: 'Vegetarian Spring Rolls',
+        description: 'Hand-wrapped in rice paper, with lettuce, bean sprouts, and rice vermicelli, served with NAM peanut sauce.'
+      },
+      {
+        name: 'Chicken and Broccoli Stir Fry',
+        description: ''
+      },
+      {
+        name: 'Lemon Grass Chicken',
+        description: 'Lemongrass stir-fried with sweet onion sauce, served with fresh lettuce, cucumbers and bean sprouts'
+      },
+      {
+        name: 'Vietnamese Fajita Beef',
+        description: 'Marinated beef stir-fried with sweet onion sauce, served with fresh lettuce, cucumbers and bean sprouts'
+      },
+      {
+        name: 'Marinated Pork',
+        description: 'Marinated pork stir-fried with sweet onion sauce, served with fresh lettuce, cucumbers and bean sprouts'
+      },
+      {
+        name: 'Seven Spice Tofu',
+        description: ''
+      },
+      {
+        name: 'Singapore Noodles',
+        description: 'Rice noodles stir-fried in curry seasoning with shrimp, BBQ pork, carrots, bean spouts, and scallions.'
+      },
+      {
+        name: 'Chicken Lo Mein',
+        description: 'Wheat noodles stir-fried with chicken and veggies.'
+      },
+      {
+        name: 'Mama Fried Rice',
+        description: 'White rice stir-fried in soy sauce with eggs, green peas, scallions, bean sprouts, chicken breast and BBQ pork'
+      },
+      {
+        name: 'White or Brown Rice',
+        description: ''
+      },
+      {
+        name: 'Side Steamed Broccoli and Carrots',
+        description: ''
+      }
+    ]
+  },
+  {
+    id: 17,
+    day: 'Tuesday, January 28, 2020',
+    name: 'Gatlins BBO',
+    description: 'BBQ',
+    url: '',
+    logo: '.././logos/gatlins.png',
+    todaysMenu: [
+      {
+        name: 'Texas Size Baled Potatoes',
+        description: 'Giant potatoes with butter, cheese, chives, bacon and sour cream'
+      },
+      {
+        name: 'Brisket',
+        description: ''
+      },
+      {
+        name: 'Turkey',
+        description: ''
+      },
+      {
+        name: 'Link Sausage',
+        description: ''
+      },
+      {
+        name: 'Pulled Pork',
+        description: ''
+      },
+      {
+        name: 'Chicken',
+        description: ''
+      },
+      {
+        name: 'Spare Ribs',
+        description: ''
+      },
+      {
+        name: 'Mac and Cheese',
+        description: ''
+      },
+      {
+        name: 'Creamed Corn',
+        description: ''
+      },
+      {
+        name: 'Baked Beans',
+        description: ''
+      },
+      {
+        name: 'Collard Greens',
+        description: ''
+      },
+      {
+        name: 'White or Wheat Bread',
+        description: ''
+      },
+      {
+        name: 'Fixins',
+        description: 'White Onion, Pickels, Pickled Jalapenos and BBQ Sauce'
+      }
+    ]
+  },
+  {
+    id: 18,
+    day: 'Wednesday, January 29, 2020',
+    name: 'FreeBirds',
+    description: 'Burritos',
+    url: '',
+    logo: '.././logos/free.png',
+    todaysMenu: [
+      {
+        name: 'Build your own Burrito or Bowl',
+        description: ''
+      },
+      {
+        name: 'Tortillas',
+        description: 'Flour, Wheat, Spicy Cayenne or Spinach Tortillas or '
+      },
+      {
+        name: 'Rice',
+        description: 'Spanish Rice or Cilantro-Lime Rice'
+      },
+      {
+        name: 'Meat or Veggies',
+        description: 'Flame Grilled Steak, Seasoned Chicken, Sauteed Veggies'
+      },
+      {
+        name: 'Beans',
+        description: 'Refried, Pinto or Black Beans'
+      },
+      {
+        name: 'Cheese',
+        description: 'Montery Jack or Cheddar'
+      },
+      {
+        name: 'Sauces',
+        description: 'Creamy Jalapeno, Habanero, Tomatillo or BBQ Sauce'
+      },
+      {
+        name: 'Extra Fixins',
+        description: 'Roasted Garlic, Cilantro, Grilled Corn Salsa, Fresh Jalapenos, Diced Tomatoes, Sour Cream, Shredded Lettuce and Tortilla Strips '
+      },
+      {
+        name: 'Chips and Dip',
+        description: 'Salsa, Queso and Guacamole'
+      }
+    ]
+  },
+  {
+    id: 19,
+    day: 'Thursday, January 30, 2020',
+    name: 'Antones',
+    description: 'Sandwiches',
+    url: '',
+    logo: '.././logos/antones.png',
+    todaysMenu: [
+      {
+        name: 'Chicken and Andouille Gumbo',
+        description: 'Served with white rice and fresh okra'
+      },
+      {
+        name: 'Red Beans and Rice',
+        description: 'Served with white rice and fresh okra'
+      },
+      {
+        name: 'Grilled Chicken Caesar Salad',
+        description: 'Grilled Chicken Breast, Romaine Lettuce, Parmesan Cheese, Croutons, Caesar Dressing'
+      },
+      {
+        name: 'Cobb Salad',
+        description: 'Ham, Turkey, Bacon, Hard-Boiled Egg, Cherry Tomatoes, English Cucumber, & Blue Cheese'
+      },
+      {
+        name: 'Greek Salad',
+        description: 'Cherry Tomatoes, English Cucumber, Black Olives, Pepperoncini, Feta Cheese, Pita Bread, & Oregano'
+      },
+      {
+        name: 'Original',
+        description: 'Served on Local Bread by Royal Bakery with Ham, Salami, Provolone, Chow Chow, Mayo and Pickles'
+      },
+      {
+        name: 'Super Original',
+        description: 'Same as the Original, but with Extra Meat and Cheese'
+      },
+      {
+        name: 'Turkey and Swiss',
+        description: 'Served on Local Bread by Royal Bakery with Roasted Turkey, Swiss Cheese, Mayo and Bread & Butter Pickles'
+      },
+      {
+        name: 'Tuna Salad',
+        description: 'Served on Local Bread by Royal Bakery with Tuna, Provolone and Pickles'
+      },
+      {
+        name: 'Chicken Salad',
+        description: 'On Toasted White or Whole Grain Bread with Mayo, Lettuce & Tomato'
+      },
+      {
+        name: 'Egg Salad',
+        description: 'On Toasted White or Whole Grain Bread with Mayo, Lettuce & Tomato'
+      },
+      {
+        name: 'BLT',
+        description: 'On Toasted White or Whole Grain Bread with Mayo and Apple-Wood Smoked Bacon'
+      },
+      {
+        name: 'Italian Deli',
+        description: 'On Ciabatta Bread with Ham, Mortadella, Salami, Pepperoni, Lettuce, Tomato, Onion, & Sweet Italian Peppers'
+      },
+      {
+        name: 'Roast Beef with Horseradish Sauce',
+        description: 'On Po’Boy Bread with House-Roasted Rare Roast Beef, Lettuce, Tomatoes, & Onion'
+      },
+      {
+        name: 'Nature Boy',
+        description: 'Served on Local Bread by Royal Bakery with hummus, tabouli and olive tapenade'
+      }
+    ]
+  },
+  {
+    id: 20,
+    day: 'Friday, January 31, 2020',
+    name: 'Star Pizza',
+    description: 'Pizza',
+    url: '',
+    logo: '.././logos/star.png',
+    todaysMenu: [
+      {
+        name: 'Starburst Pizza',
+        description: 'ground beef, italian sausage, pepperoni, onions, mushrooms and green peppers'
+      },
+      {
+        name: 'The Cowbell',
+        description: 'we slow smoke our own BBQ beef brisket and top it off with our homemade "MoreCowbell" BBQ sauce, cheddar and mozzarella cheese. try it with a side of onions and pickled jalepenos!'
+      },
+      {
+        name: 'Salsa Verde Pizza',
+        description: 'spicy tomatillo sauce topped with roasted poblano peppers, pan-fried garlic and feta cheese'
+      },
+      {
+        name: 'Bens Special Pizza',
+        description: 'ground beef, italian sausage, pepperoni and ham'
+      },
+      {
+        name: 'Veggie Pizza',
+        description: 'mushrooms, onions, green peppers, broccoli, cauliflower, zucchini and sprouts'
+      },
+      {
+        name: 'Margherita Pizza',
+        description: 'olive oil base, roma tomatoes, garlic, basil, parmesan, and our mix of mozzarella and provolone cheese'
+      },
+      {
+        name: 'Chicken Alfredo Pizza',
+        description: 'alfredo sauce, chicken, gorgonzola, mozzarella, mushrooms, onions, fresh basil, and our mix of mozzarella and provolone cheese'
+      },
+      {
+        name: 'Dinner Salad',
+        description: 'lettuce, roma tomatoes, carrots, cucumbers and homemade croutons'
+      },
+      {
+        name: 'Caesar Salad',
+        description: 'romaine lettuce, homemade croutons, parmesan cheese and kalamata olives tossed with our classic caesar dressing'
+      }
+    ]
+  },
 ]

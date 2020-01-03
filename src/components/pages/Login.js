@@ -23,13 +23,16 @@ class Login extends Component {
       this.props.history.replace('/home')
     }).catch((error) => {
       console.log(error)
+      console.log('i logged in')
     })
   }
 
   signup (e) {
     e.preventDefault()
     fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
-    }).then((u) => { console.log(u) })
+    }).then((u) => {  
+      this.props.history.replace('/home')
+    })
       .catch((error) => {
         console.log(error)
       })
