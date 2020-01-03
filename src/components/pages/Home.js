@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { cardInfo } from '../data'
 import Card from '../Card'
 import fire from '../../config/Fire'
-// import Calendar from './Calendar'
+import Pagination from '../Pagination'
 
 class Home extends Component {
   constructor(props) {
@@ -23,7 +23,7 @@ class Home extends Component {
           )}
         </div>
         <button onClick={this.logout}>Logout</button>
-        {/* <Calendar /> */}
+        <Pagination totalCards={cardInfo.length} />
       </div>
     )
   }

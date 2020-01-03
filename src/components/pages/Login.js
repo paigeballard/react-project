@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
 import fire from '../../config/Fire'
-
 
 class Login extends Component {
   constructor (props) {
@@ -21,22 +19,17 @@ class Login extends Component {
 
   login (e) {
     e.preventDefault()
-    fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then(() => {
+    fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
+      this.props.history.replace('/home')
     }).catch((error) => {
       console.log(error)
     })
   }
 
-//   onSubmit () {
-//     if (this.login) {
-//       return <Redirect to='/home' />
-//     }
-//   }
-
   signup (e) {
     e.preventDefault()
-    fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then(() => {
-    }).then(() => { console.log() })
+    fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
+    }).then((u) => { console.log(u) })
       .catch((error) => {
         console.log(error)
       })
