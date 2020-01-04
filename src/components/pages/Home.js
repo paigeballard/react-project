@@ -52,9 +52,9 @@ class Home extends Component {
         <div className='row mt-5'>
           {renderCurrentCards}
         </div>
-        <ul>
+        <div>
           {renderPageNumbers}
-        </ul>
+        </div>
       </div>
     )
   }
