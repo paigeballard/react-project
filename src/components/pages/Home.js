@@ -1,30 +1,60 @@
 import React, { Component } from 'react'
 import { cardInfo } from '../data'
 import Card from '../Card'
-import fire from '../../config/Fire'
-// import Pagination from '../Pagination'
 
 class Home extends Component {
-  constructor (props) {
-    super(props)
-    this.logout = this.logout.bind(this)
+  constructor () {
+    super()
+    this.state = {
+      cardInfo,
+      currentPage: 1,
+      cardsPerPage: 5
+    }
+    this.handleClick = this.handleClick.bind(this)
   }
 
-  logout () {
-    fire.auth().signOut()
-    console.log('click happened')
+  handleClick (event) {
+    this.setState({
+      currentPage: Number(event.target.id)
+    })
   }
 
   render () {
+    const { cardInfo, currentPage, cardsPerPage } = this.state
+
+    const indexOfLastCards = currentPage * cardsPerPage
+    const indexOfFirstCards = indexOfLastCards - cardsPerPage
+    const currentCards = cardInfo.slice(indexOfFirstCards, indexOfLastCards)
+
+    const renderCurrentCards = currentCards.map((item, index) => {
+      return <Card key={index} {...item} />
+    })
+
+    const pageNumbers = []
+    for (let i = 1; i <= Math.ceil(cardInfo.length / cardsPerPage); i++) {
+      pageNumbers.push(i)
+    }
+
+    const renderPageNumbers = pageNumbers.map(number => {
+      return (
+        <li
+          key={number}
+          id={number}
+          onClick={this.handleClick}
+        >
+          {number}
+        </li>
+      )
+    })
+
     return (
       <div className='container'>
         <div className='row mt-5'>
-          {cardInfo.map(item =>
-            <Card {...item} />
-          )}
+          {renderCurrentCards}
         </div>
-        <button onClick={this.logout}>Logout</button>
-        {/* <Pagination totalCards={cardInfo.length} /> */}
+        <ul>
+          {renderPageNumbers}
+        </ul>
       </div>
     )
   }

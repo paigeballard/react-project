@@ -3,9 +3,6 @@ import { cardInfo } from './data'
 
 const InfoContext = React.createContext()
 
-// provider
-// consumer
-
 class CardContext extends Component {
     state = {
         info: cardInfo

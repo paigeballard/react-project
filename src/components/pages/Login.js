@@ -1,69 +1,75 @@
-import React, { Component } from 'react'
-import fire from '../../config/Fire'
+// import React, { Component } from 'react'
+// import fire from '../../config/Fire'
 
-class Login extends Component {
-  constructor (props) {
-    super(props)
-    this.login = this.login.bind(this)
-    this.handleChange = this.handleChange.bind(this)
-    this.signup = this.signup.bind(this)
-    this.state = {
-      email: '',
-      password: ''
-    }
-  }
+// class Login extends Component {
+//   constructor (props) {
+//     super(props)
+//     this.login = this.login.bind(this)
+//     this.handleChange = this.handleChange.bind(this)
+//     this.handleSubmit = this.handleSubmit.bind(this)
+//     this.signup = this.signup.bind(this)
+//     this.state = {
+//       email: '',
+//       password: ''
+//     }
+//   }
 
-  handleChange (e) {
-    this.setState({ [e.target.name]: e.target.value })
-  }
+//   handleChange (e) {
+//     this.setState({ [e.target.name]: e.target.value })
+//   }
 
-  login (e) {
-    e.preventDefault()
-    fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
-      this.props.history.replace('/home')
-    }).catch((error) => {
-      console.log(error)
-      console.log('i logged in')
-    })
-  }
+//   handleSubmit (e) {
+//     console.log('a name was submitted:' + this.state.value)
+//     e.preventDefault()
+//   }
 
-  signup (e) {
-    e.preventDefault()
-    fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
-    }).then((u) => {  
-      this.props.history.replace('/home')
-    })
-      .catch((error) => {
-        console.log(error)
-      })
-  }
+//   login (e) {
+//     e.preventDefault()
+//     fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
+//       this.props.history.replace('/home')
+//     }).catch((error) => {
+//       console.log(error)
+//       console.log('i logged in')
+//     })
+//   }
 
-  render () {
-    return (
-      <div className='col-md-6'>
-        <form>
-          <div class='form-group'>
-            <lable htmlFor='exampleInputEmail1'>Email address</lable>
-            <input
-              value={this.state.email} onChange={this.handleChange} type='email' name='email'
-              class='form-control' id='exampleInputEmail' aria-describedby='emailHelp'
-              placeholder='Enter email'
-            />
-            <small id='emailHelp' class='form-text text-muted'>We'll never share your email with anyone else.</small>
-          </div>
-          <div class='form-group'>
-            <lable htmlFor='exampleInputPassword1'>Password</lable>
-            <input
-              value={this.state.password} onChange={this.handleChange} tyoe='password'
-              name='password' class='form-control' id='exampleInputPassword1' placeholder='Password'
-            />
-          </div>
-          <button type='submit' onClick={this.login} class='btn btn-primary'>Login</button>
-          <button onClick={this.signup} style={{ marginLeft: '25px' }} className='btn btn-sucess'>Signup</button>
-        </form>
-      </div>
-    )
-  }
-}
+//   signup (e) {
+//     e.preventDefault()
+//     fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
+//     }).then((u) => {
+//       this.props.history.replace('/home')
+//     })
+//       .catch((error) => {
+//         console.log(error)
+//       })
+//   }
 
-export default Login
+//   render () {
+//     return (
+//       <div className='col-md-6'>
+//         <form>
+//           <div class='form-group'>
+//             <lable htmlFor='exampleInputEmail1'>Email address</lable>
+//             <input
+//               value={this.state.email} onChange={this.handleChange} type='email' name='email'
+//               class='form-control' id='exampleInputEmail' aria-describedby='emailHelp'
+//               placeholder='Enter email'
+//             />
+//             <small id='emailHelp' class='form-text text-muted'>We'll never share your email with anyone else.</small>
+//           </div>
+//           <div class='form-group'>
+//             <lable htmlFor='exampleInputPassword1'>Password</lable>
+//             <input
+//               value={this.state.password} onChange={this.handleChange} tyoe='password'
+//               name='password' class='form-control' id='exampleInputPassword1' placeholder='Password'
+//             />
+//           </div>
+//           <button type='submit' onClick={this.login} class='btn btn-primary'>Login</button>
+//           <button onClick={this.signup} style={{ marginLeft: '25px' }} className='btn btn-sucess'>Signup</button>
+//         </form>
+//       </div>
+//     )
+//   }
+// }
+
+// export default Login

@@ -1,5 +1,6 @@
 import React from 'react'
 import { cardInfo } from '../data'
+import { Link } from 'react-router-dom'
 
 
 class Restaurant extends React.Component {
@@ -21,10 +22,9 @@ class Restaurant extends React.Component {
   render () {
     const menu = this.buildMenu(cardInfo)
     console.log(menu)
-    // this.data(this.state.id)
-    // console.log( this.data(this.state.id))
     return (
       <div>
+        <Link to='/jasons'>Order Jason's</Link>
   <h3>{menu.day} {menu.date}</h3>
         <h1>{menu.name}</h1>
         {menu.todaysMenu.map(item => {

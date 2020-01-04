@@ -1,6 +1,4 @@
 
-// import moment from 'moment'
-
 const today = new Date()
 console.log(today)
 
@@ -8,11 +6,11 @@ export const cardInfo = [
   {
     id: 1,
     day: 'Monday, January 6, 2020',
-    // date: moment(new Date()).format('MMM Do'),
     name: 'Potbelly',
     description: 'Sandwiches',
     url: 'https://api-potbelly-production.fuzzstaging.com/proxy/global-menu',
     logo: '.././logos/potbelly.png',
+    page: 1,
     todaysMenu: [
       {
         name: 'Turkey Club',
@@ -75,11 +73,11 @@ export const cardInfo = [
   {
     id: 2,
     day: 'Tuesday, January 7, 2020',
-    // date: moment(new Date()).add(1, 'days').calendar(),
     name: 'Berryhill Baja',
     description: 'Tex-Mex',
     url: 'https://pappasitos.com/menu/',
     logo: '.././logos/berry.png',
+    page: 1,
     todaysMenu: [
       {
         name: 'Chopped Chicken Salad',
@@ -146,6 +144,7 @@ export const cardInfo = [
     description: 'Greek',
     url: 'http://www.nikonikos.com/Menus/Montrose/',
     logo: '.././logos/nikos.png',
+    page: 1,
     todaysMenu: [
       {
         name: 'Greek Salad',
@@ -204,6 +203,7 @@ export const cardInfo = [
     description: 'Chinese',
     url: 'https://www.pfchangs.com/menu',
     logo: '.././logos/changs.png',
+    page: 1,
     todaysMenu: [
       {
         name: 'Mandarin Crunch Salad',
@@ -282,6 +282,7 @@ export const cardInfo = [
     description: 'Pizza',
     url: 'https://pinkspizza.com/menu/',
     logo: '.././logos/pinks.png',
+    page: 1,
     todaysMenu: [
       {
         name: 'California Salad',
@@ -365,6 +366,7 @@ export const cardInfo = [
     description: 'Thai',
     url: '',
     logo: '.././logos/thai.jpg',
+    page: 2,
     todaysMenu: [
       {
         name: 'Green Thai Salad',
@@ -464,6 +466,7 @@ export const cardInfo = [
     description: 'Burgers',
     url: '',
     logo: '.././logos/red.png',
+    page: 2,
     todaysMenu: [
       {
         name: 'Avo-Cobb-O Salad',
@@ -502,6 +505,7 @@ export const cardInfo = [
     description: 'Jamaican',
     url: '',
     logo: '.././logos/cool.png',
+    page: 2,
     todaysMenu: [
       {
         name: 'Jerk Chicken',
@@ -560,6 +564,7 @@ export const cardInfo = [
     description: 'Salads',
     url: '',
     logo: '.././logos/salata.jpg',
+    page: 2,
     todaysMenu: [
       {
         name: 'Build your own Salad or Wrap',
@@ -598,6 +603,7 @@ export const cardInfo = [
     description: 'Gyro & Chicken',
     url: '',
     logo: '.././logos/halal.png',
+    page: 2,
     todaysMenu: [
       {
         name: 'Build your own Platter',
@@ -632,6 +638,7 @@ export const cardInfo = [
     description: 'Vegetarian Indian',
     url: '',
     logo: '.././logos/govin.png',
+    page: 3,
     todaysMenu: [
       {
         name: 'House Salad',
@@ -674,6 +681,7 @@ export const cardInfo = [
     description: 'Greek',
     url: '',
     logo: '.././logos/zoes.png',
+    page: 3,
     todaysMenu: [
       {
         name: 'Greek Salad',
@@ -716,6 +724,7 @@ export const cardInfo = [
     description: 'Italian',
     url: '',
     logo: '.././logos/buca.png',
+    page: 3,
     todaysMenu: [
       {
         name: 'Apple Gorgonzola Salad',
@@ -774,6 +783,7 @@ export const cardInfo = [
     description: 'Lobster Rolls and Sandwiches',
     url: '',
     logo: '.././logos/main.jpg',
+    page: 3,
     todaysMenu: [
       {
         name: 'Lobster Roll',
@@ -848,6 +858,7 @@ export const cardInfo = [
     description: 'Tex-Mex',
     url: '',
     logo: '.././logos/chuys.png',
+    page: 3,
     todaysMenu: [
       {
         name: 'Chips and Dips',
@@ -938,6 +949,7 @@ export const cardInfo = [
     description: 'Vietnamese',
     url: '',
     logo: '.././logos/nam.jpg',
+    page: 4,
     todaysMenu: [
       {
         name: 'Grilled Lemongrass Chicklen Salad',
@@ -996,6 +1008,7 @@ export const cardInfo = [
     description: 'BBQ',
     url: '',
     logo: '.././logos/gatlins.png',
+    page: 4,
     todaysMenu: [
       {
         name: 'Texas Size Baled Potatoes',
@@ -1058,6 +1071,7 @@ export const cardInfo = [
     description: 'Burritos',
     url: '',
     logo: '.././logos/free.png',
+    page: 4,
     todaysMenu: [
       {
         name: 'Build your own Burrito or Bowl',
@@ -1104,6 +1118,7 @@ export const cardInfo = [
     description: 'Sandwiches',
     url: '',
     logo: '.././logos/antones.png',
+    page: 4,
     todaysMenu: [
       {
         name: 'Chicken and Andouille Gumbo',
@@ -1174,6 +1189,7 @@ export const cardInfo = [
     description: 'Pizza',
     url: '',
     logo: '.././logos/star.png',
+    page: 4,
     todaysMenu: [
       {
         name: 'Starburst Pizza',

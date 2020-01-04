@@ -1,11 +1,115 @@
 import React, { Component } from 'react'
 
+const formValid = ({ formErrors, ...rest }) => {
+  let valid = true;
+
+  //validate form errors being empty
+  Object.values(formErrors).forEach(val => {
+    val.length > 0 && (valid = false)
+  })
+
+  //validate the form was filled out
+  Object.values(rest).forEach(val => {
+    val === null && (valid = false)
+  })
+
+  return valid;
+}
+
 class Jasons extends Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      fullName: null,
+      foodOrder: null,
+      formErrors: {
+        fullName: '',
+        foodOrder: ''
+      }
+    }
+  }
+
+  handleSubmit = e => {
+    e.preventDefault()
+
+    if(formValid(this.state)) {
+      console.log(`
+      --SUBMITTING--
+      fullName: ${this.state.fullName}
+      foodOrder: ${this.state.foodOrder}
+      `)
+    } else {
+      console.log("form invalid - display error message")
+    }
+  }
+
+  handleChange = e => {
+    e.preventDefault();
+    const { name, value } = e.target;
+    let formErrors = this.state.formErrors;
+
+
+    switch (name) {
+      case 'fullName':
+        formErrors.fullName = value.length < 3 ? 'minimum 3 characters required' : '';
+        break;
+        case 'foodOrder':
+            formErrors.foodOrder = value.length < 0 ? 'minimum 3 characters required' : '';
+            break;
+            default:
+              break;
+    
+  }
+
+  this.setState({formErrors, [name]: value }, () => console.log(this.state))
+}
+
   render () {
+    const { formErrors } = this.state;
     return (
       <div>
-        <h1>Soups</h1>
-        <ul>
+        <div className='wrapper'>
+          <div className='form-wrapper'>
+            <h1>Would you rather Jasons?</h1>
+            <form onSubmit={this.handleSubmit} noValidate>
+              <div className='fullName'>
+                <label htmlFor='fullName'>Name</label>
+                <input
+                  type='text'
+                  className={formErrors.fullName.length > 0 ? "error" : null}
+                  placeholder='Name'
+                  name='fullName'
+                  noValidate
+                  onChange={this.handleChange}
+                />
+                {formErrors.fullName.length > 0 && (
+                  <span className="errorMessage">{formErrors.fullName}</span>
+                )}
+              </div>
+              <div className='foodOrder'>
+                <lable htmlFor='foodOrder'>Food Order</lable>
+                <input
+                  type='text'
+                  className={formErrors.foodOrder.length > 0 ? "error" : null}
+                  placeholder='Food Order'
+                  name='foodOrder'
+                  noValidate
+                  onChange={this.handleChange}
+                />
+                 {formErrors.foodOrder.length > 0 && (
+                  <span className="errorMessage">{formErrors.foodOrder}</span>
+                )}
+              </div>
+              <div className='submitOrder'>
+                <button type='submit'>Submit Order</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+     <h1>Soups</h1>
+     <ul>
           <li>Broccoli Cheese</li>
           <li>Chicken Noodle</li>
           <li>Fire Roasted Tortilla</li>
@@ -19,8 +123,8 @@ class Jasons extends Component {
           <li>Chicken Pot Pie</li>
           <li>Irish Potato</li>
         </ul>
-        <h1>Salads</h1>
-        <ul>
+     <h1>Salads</h1>
+     <ul>
           <li>Chicken Club Salad
             <p>Grilled, 100% antibiotic-free chicken breast, grape tomatoes, sliced avocado, cheddar, Asiago, bacon on mixed salad greens.
             </p>
@@ -46,8 +150,8 @@ class Jasons extends Component {
             </p>
           </li>
         </ul>
-        <h1>Pastas and Potatoes</h1>
-        <ul>
+     <h1>Pastas and Potatoes</h1>
+     <ul>
           <li>Zucchini Garden Pasta
             <p>Bowtie pasta, roasted zucchini, fresco mix of roasted tomatoes, organic spinach, artichoke hearts, Asiago, with herb focaccia.
             </p>
@@ -78,8 +182,8 @@ class Jasons extends Component {
             <p>Chopped pit-smoked beef brisket, barbecue sauce, cheddar, butter on a baked potato.</p>
           </li>
         </ul>
-        <h1>Sandwiches</h1>
-        <ul>
+     <h1>Sandwiches</h1>
+     <ul>
           <li>Zucchini Grillini
             <p>Roasted zucchini, Muenster, organic spinach, red onions, Roma tomatoes, kalamata olives, roasted red pepper hummus, toasted on olive oil-basted multigrain wheat. Choice of one side: fresh fruit, steamed veggies, baked chips or organic blue corn chips with salsa.</p>
           </li>
@@ -114,7 +218,7 @@ class Jasons extends Component {
             <p>Made with our all-new, grilled, whole chicken breast fillet, chipotle aioli, leafy lettuce, tomato, on a toasted organic ancient grain bun. Served with chips or baked chips and a pickle. A Limited Time Offer!</p>
           </li>
         </ul>
-      </div>
+   </div>
     )
   }
 }

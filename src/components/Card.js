@@ -12,7 +12,6 @@ class Card extends React.Component {
         <div className='card-body'>
           <h3 className='card-title text-uppercase'>{this.props.day}</h3>
           <h5 className='card-title'>{this.props.date}</h5>
-          {/* <h3 className='card-title text-uppercase'>{item.day}</h3> */}
           <h5 className='card-title'>{this.props.description}</h5>
         </div>
         <Link className='btn btn-secondary' to={`/restaurant/${this.props.id}`}>Menu</Link>
