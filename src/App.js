@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './components/layouts/Navbar'
+import Footer from './components/layouts/Footer'
 import { Switch, Route } from 'react-router-dom'
 import Home from './components/pages/Home'
 import Jasons from './components/pages/Jasons'
@@ -30,6 +31,7 @@ class App extends Component {
           <Route path='/restaurant/:id' component={Restaurant} />
           <Route component={NotFoundPage} />
         </Switch>
+        <Footer />
       </div>
     )
   }

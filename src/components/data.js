@@ -5,7 +5,8 @@ console.log(today)
 export const cardInfo = [
   {
     id: 1,
-    day: 'Monday, January 6, 2020',
+    day: 'Monday',
+    date: 'January 6, 2020',
     name: 'Potbelly',
     description: 'Sandwiches',
     url: 'https://api-potbelly-production.fuzzstaging.com/proxy/global-menu',

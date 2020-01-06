@@ -37,23 +37,27 @@ class Home extends Component {
 
     const renderPageNumbers = pageNumbers.map(number => {
       return (
-        <li
+        <button
           key={number}
           id={number}
           onClick={this.handleClick}
         >
           {number}
-        </li>
+        </button>
       )
     })
 
     return (
-      <div className='container'>
-        <div className='row mt-5'>
-          {renderCurrentCards}
-        </div>
-        <div>
-          {renderPageNumbers}
+      <div className='Site'>
+        <div className='Site-content'>
+          <div className='container'>
+            <div className='row mt-5'>
+              {renderCurrentCards}
+            </div>
+            <div>
+              {renderPageNumbers}
+            </div>
+          </div>
         </div>
       </div>
     )
