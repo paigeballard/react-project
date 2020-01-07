@@ -41,16 +41,16 @@ class Jasons extends Component {
       foodOrder: ${this.state.foodOrder}
       `)
       
-     myDb.collection('orders').doc('jasonsOrders').set({
-        fullName: 'Paige',
-        foodOrder: 'Turkey Club'
-      })
-      .then(function() {
-        console.log('order submitted')
-      })
-      .catch(function(error) {
-        console.error('error with submit', error)
-      })
+    //  myDb.collection('orders').doc('jasonsOrders').set({
+    //     fullName: 'Paige',
+    //     foodOrder: 'Turkey Club'
+    //   })
+    //   .then(function() {
+    //     console.log('order submitted')
+    //   })
+    //   .catch(function(error) {
+    //     console.error('error with submit', error)
+    //   })
 
     } else {
       console.log("form invalid - display error message")
