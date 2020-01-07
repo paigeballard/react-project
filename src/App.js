@@ -21,7 +21,8 @@ class App extends Component {
 
   render () {
     return (
-      <div>
+      <React.Fragment>
+        <div>
         <Navbar />
         <Switch>
           <Route exact path='/home' component={Home} />
@@ -31,8 +32,11 @@ class App extends Component {
           <Route path='/restaurant/:id' component={Restaurant} />
           <Route component={NotFoundPage} />
         </Switch>
-        <Footer />
+       
       </div>
+       <Footer />
+      </React.Fragment>
+      
     )
   }
 }

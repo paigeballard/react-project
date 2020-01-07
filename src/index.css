@@ -1,7 +1,12 @@
+html {
+  margin: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -23,34 +28,37 @@ code {
   border: none
 }
 
-:root {
-  --space: 1.5em 0;
-  --space: 2em 0;
+#root {
+   --space: 1.5em 0;
+  --space: 2em 0; 
   --mainDark: #343a40;
   --mainGrey: rgba(109, 109, 109);
   --mainLightGrey: rgba(172, 172, 172);
   --mainWhite: #fff;
   --mainBlue: #007bff;
+  height: 100vh !important;
 }
 
 .Site {
   display: flex;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
 }
 
 .Site-content {
-  flex: 1;
+  flex: 0;
   padding: var(--space) var(--space) 0;
   width: 100;
+
 }
 
 .Site-content:after {
   content: '\00a0';
-  display: block;
+  display: flex;
   margin-top: var(--spcae);
-  height: 0;
+  height: 20;
   visibility: hidden;
 }
 
@@ -67,7 +75,7 @@ code {
   margin-right: 2px;
   background-color: #fff;
   width: 40%;
-  height: 60vh;
+  height: 40vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -111,4 +119,21 @@ code {
 
 .card-text {
   text-align: center;
+}
+
+.submitOrder {
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* .main-footer {
+  position: absolute;
+  padding: 15px;
+  background-color:  grey;
+  margin-bottom: -90px;
+}
+ */
+ .header {
+  height: 65vh;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import myDb from '../firebase'
 
 const formValid = ({ formErrors, ...rest }) => {
   let valid = true;
@@ -39,9 +40,32 @@ class Jasons extends Component {
       fullName: ${this.state.fullName}
       foodOrder: ${this.state.foodOrder}
       `)
+      
+     myDb.collection('orders').doc('jasonsOrders').set({
+        fullName: 'Paige',
+        foodOrder: 'Turkey Club'
+      })
+      .then(function() {
+        console.log('order submitted')
+      })
+      .catch(function(error) {
+        console.error('error with submit', error)
+      })
+
     } else {
       console.log("form invalid - display error message")
+      this.handleClearForm(e)
     }
+  
+  }
+
+  handleClearForm(e) {
+    e.preventDefault();
+    this.setState({
+      fullName: '',
+      foodOrder: ''
+    })
+    
   }
 
   handleChange = e => {
@@ -214,7 +238,11 @@ class Jasons extends Component {
                 )}
               </div>
               <div className='submitOrder'>
-                <button className='btn btn-outline-primary' type='submit'>Submit Order</button>
+                <button  
+                onClick={e =>
+                window.confirm('Your order has been submitted. Check your inbox for a confirmation email')
+                }
+                className='btn btn-outline-primary' type='submit'>Submit Order</button>
               </div>
             </form>
           </div>

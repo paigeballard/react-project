@@ -38,7 +38,7 @@ function Footer () {
           <div className='footer-botton'>
             <p className='text-xs-center'>
                 &copy;{new Date().getFullYear()} cPanel Order Lunch App 
-          </p>
+            </p>
           </div>
         </div>
       </div>
@@ -50,12 +50,20 @@ export default Footer
 
 const FooterContainer = styled.footer`
 .main-footer {
-    // flex-shrink: 0;
-    margin-top: auto;
+    display: flex;
+    align-items: flex-end;
+    // position: fixed;
+    flex-shrink: none;
+    // margin-top: auto;
+   
 }
 
 .row {
     flex: 1;
+}
+
+p {
+  padding-bottom: 2rem;
 }
 
 .footer-middle {
