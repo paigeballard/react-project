@@ -24,8 +24,9 @@ class Restaurant extends React.Component {
     console.log(menu)
     return (
       <div>
-        <Link to='/jasons'>Order Jason's</Link>
-  <h3>{menu.day} {menu.date}</h3>
+        <div className='wrapper'>
+          <div className='mainRestaurant'>
+          <h3>{menu.day}</h3>
         <h1>{menu.name}</h1>
         {menu.todaysMenu.map(item => {
           return <div>
@@ -35,6 +36,13 @@ class Restaurant extends React.Component {
             </ul>
           </div>
         })}
+          </div>
+        <div className='sidebarTwo'>
+          <h1>Want to order Jasons Deli instead?</h1>
+          <h5>Follow the link bellow to submit your order.</h5>
+          <Link to='/jasons'>Jason's Deli</Link>
+        </div>
+        </div>
       </div>
     )
   }

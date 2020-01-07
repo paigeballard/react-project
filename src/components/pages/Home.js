@@ -37,7 +37,8 @@ class Home extends Component {
 
     const renderPageNumbers = pageNumbers.map(number => {
       return (
-        <button
+        <button 
+          className='btn btn-default'
           key={number}
           id={number}
           onClick={this.handleClick}

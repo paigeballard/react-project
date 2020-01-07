@@ -68,46 +68,8 @@ class Jasons extends Component {
   render () {
     const { formErrors } = this.state;
     return (
-      <div>
         <div className='wrapper'>
-          <div className='form-wrapper'>
-            <h1>Would you rather Jasons?</h1>
-            <form onSubmit={this.handleSubmit} noValidate>
-              <div className='fullName'>
-                <label htmlFor='fullName'>Name</label>
-                <input
-                  type='text'
-                  className={formErrors.fullName.length > 0 ? "error" : null}
-                  placeholder='Name'
-                  name='fullName'
-                  noValidate
-                  onChange={this.handleChange}
-                />
-                {formErrors.fullName.length > 0 && (
-                  <span className="errorMessage">{formErrors.fullName}</span>
-                )}
-              </div>
-              <div className='foodOrder'>
-                <lable htmlFor='foodOrder'>Food Order</lable>
-                <input
-                  type='text'
-                  className={formErrors.foodOrder.length > 0 ? "error" : null}
-                  placeholder='Food Order'
-                  name='foodOrder'
-                  noValidate
-                  onChange={this.handleChange}
-                />
-                 {formErrors.foodOrder.length > 0 && (
-                  <span className="errorMessage">{formErrors.foodOrder}</span>
-                )}
-              </div>
-              <div className='submitOrder'>
-                <button type='submit'>Submit Order</button>
-              </div>
-            </form>
-          </div>
-        </div>
-
+          <div className='mainJason'>
      <h1>Soups</h1>
      <ul>
           <li>Broccoli Cheese</li>
@@ -218,7 +180,47 @@ class Jasons extends Component {
             <p>Made with our all-new, grilled, whole chicken breast fillet, chipotle aioli, leafy lettuce, tomato, on a toasted organic ancient grain bun. Served with chips or baked chips and a pickle. A Limited Time Offer!</p>
           </li>
         </ul>
-   </div>
+        </div>
+          <div className='sidebar'>
+          <div className='form-wrapper'>
+            <h1>Would you rather Jasons?</h1>
+            <form onSubmit={this.handleSubmit} noValidate>
+              <div className='fullName'>
+                <label htmlFor='fullName'>Full Name</label>
+                <input
+                  type='text'
+                  className={formErrors.fullName.length > 0 ? "error" : null}
+                  placeholder='First and Last Name'
+                  name='fullName'
+                  noValidate
+                  onChange={this.handleChange}
+                />
+                {formErrors.fullName.length > 0 && (
+                  <span className="errorMessage">{formErrors.fullName}</span>
+                )}
+              </div>
+              <div className='foodOrder'>
+                <lable htmlFor='foodOrder'>Food Order</lable>
+                <input
+                  type='text'
+                  className={formErrors.foodOrder.length > 0 ? "error" : null}
+                  placeholder='Food Order'
+                  name='foodOrder'
+                  noValidate
+                  onChange={this.handleChange}
+                />
+                 {formErrors.foodOrder.length > 0 && (
+                  <span className="errorMessage">{formErrors.foodOrder}</span>
+                )}
+              </div>
+              <div className='submitOrder'>
+                <button className='btn btn-outline-primary' type='submit'>Submit Order</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
     )
   }
 }

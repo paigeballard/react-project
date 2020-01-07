@@ -5,8 +5,8 @@ console.log(today)
 export const cardInfo = [
   {
     id: 1,
-    day: 'Monday',
-    date: 'January 6, 2020',
+    day: 'Monday 1.6.20',
+    date: '',
     name: 'Potbelly',
     description: 'Sandwiches',
     url: 'https://api-potbelly-production.fuzzstaging.com/proxy/global-menu',
@@ -73,7 +73,8 @@ export const cardInfo = [
   },
   {
     id: 2,
-    day: 'Tuesday, January 7, 2020',
+    day: 'Tuesday 1.7.20',
+    date: '',
     name: 'Berryhill Baja',
     description: 'Tex-Mex',
     url: 'https://pappasitos.com/menu/',
@@ -140,7 +141,8 @@ export const cardInfo = [
   },
   {
     id: 3,
-    day: 'Wednesday, January 8, 2020',
+    day: 'Wednesday 1.8.20',
+    date: '',
     name: 'Niko Nikos',
     description: 'Greek',
     url: 'http://www.nikonikos.com/Menus/Montrose/',
@@ -199,7 +201,8 @@ export const cardInfo = [
   },
   {
     id: 4,
-    day: 'Thursday, January 9, 2020',
+    day: 'Thursday 1.9.20',
+    date: '',
     name: 'PF Changs',
     description: 'Chinese',
     url: 'https://www.pfchangs.com/menu',
@@ -278,7 +281,8 @@ export const cardInfo = [
   },
   {
     id: 5,
-    day: 'Friday, January 10, 2020',
+    day: 'Friday 1.10.20',
+    date: '',
     name: 'Pinks Pizza',
     description: 'Pizza',
     url: 'https://pinkspizza.com/menu/',
@@ -361,8 +365,8 @@ export const cardInfo = [
   },
   {
     id: 6,
-    day: 'Monday, January 13, 2020',
-    // date: moment(new Date()).format('MMM Do'),
+    day: 'Monday 1.13.20',
+    date: '',
     name: 'Thai Cottage',
     description: 'Thai',
     url: '',
@@ -461,8 +465,8 @@ export const cardInfo = [
   },
   {
     id: 7,
-    day: 'Tuesday, January 14, 2020',
-    // date: moment(new Date()).add(1, 'days').calendar(),
+    day: 'Tuesday 1.14.20',
+    date: '',
     name: 'Red Robbins',
     description: 'Burgers',
     url: '',
@@ -501,7 +505,8 @@ export const cardInfo = [
   },
   {
     id: 8,
-    day: 'Wednesday, January 15, 2020',
+    day: 'Wednesday 1.15.20',
+    date: '',
     name: 'Cool Runnings',
     description: 'Jamaican',
     url: '',
@@ -560,7 +565,8 @@ export const cardInfo = [
   },
   {
     id: 9,
-    day: 'Thursday, January 16, 2020',
+    day: 'Thursday 1.16.20',
+    date: '',
     name: 'Salata',
     description: 'Salads',
     url: '',
@@ -599,7 +605,8 @@ export const cardInfo = [
   },
   {
     id: 10,
-    day: 'Friday, January 17, 2020',
+    day: 'Friday 1.17.20',
+    date: '',
     name: 'The Halal Guys',
     description: 'Gyro & Chicken',
     url: '',
@@ -634,7 +641,8 @@ export const cardInfo = [
   },
   {
     id: 11,
-    day: 'Monday, January 20, 2020',
+    day: 'Monday 1.20.20',
+    date: '',
     name: 'Govindas',
     description: 'Vegetarian Indian',
     url: '',
@@ -677,7 +685,8 @@ export const cardInfo = [
   },
   {
     id: 12,
-    day: 'Tuesday, January 21, 2020',
+    day: 'Tuesday 1.21.20',
+    date: '',
     name: 'Zoes Kitchen',
     description: 'Greek',
     url: '',
@@ -720,7 +729,8 @@ export const cardInfo = [
   },
   {
     id: 13,
-    day: 'Wednesday, January 22, 2020',
+    day: 'Wednesday 1.22.20',
+    date: '',
     name: 'Bucca di Beppo',
     description: 'Italian',
     url: '',
@@ -779,7 +789,8 @@ export const cardInfo = [
   },
   {
     id: 14,
-    day: 'Thursday, January 23, 2020',
+    day: 'Thursday 1.23.20',
+    date: '',
     name: 'Maine-ly',
     description: 'Lobster Rolls and Sandwiches',
     url: '',
@@ -854,7 +865,8 @@ export const cardInfo = [
   },
   {
     id: 15,
-    day: 'Friday, January 24, 2020',
+    day: 'Friday 1.24.20',
+    date: '',
     name: 'Chuys',
     description: 'Tex-Mex',
     url: '',
@@ -946,6 +958,7 @@ export const cardInfo = [
   {
     id: 16,
     day: 'Monday, January 27, 2020',
+    date: '',
     name: 'Nam Noodles and More',
     description: 'Vietnamese',
     url: '',
@@ -1005,6 +1018,7 @@ export const cardInfo = [
   {
     id: 17,
     day: 'Tuesday, January 28, 2020',
+    date: '',
     name: 'Gatlins BBO',
     description: 'BBQ',
     url: '',
@@ -1068,6 +1082,7 @@ export const cardInfo = [
   {
     id: 18,
     day: 'Wednesday, January 29, 2020',
+    date: '',
     name: 'FreeBirds',
     description: 'Burritos',
     url: '',
@@ -1115,6 +1130,7 @@ export const cardInfo = [
   {
     id: 19,
     day: 'Thursday, January 30, 2020',
+    date: '',
     name: 'Antones',
     description: 'Sandwiches',
     url: '',
@@ -1186,6 +1202,7 @@ export const cardInfo = [
   {
     id: 20,
     day: 'Friday, January 31, 2020',
+    date: '',
     name: 'Star Pizza',
     description: 'Pizza',
     url: '',

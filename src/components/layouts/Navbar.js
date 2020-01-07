@@ -16,9 +16,9 @@ function Navbar () {
           <li className='nav-item active'>
             <Link className='nav-link text-white text-uppercase ml-5' to='/home'>Home&nbsp;<i className='fas fa-home' /> </Link>
           </li>
-          <li className='nav-item'>
+          {/* <li className='nav-item'>
             <Link className='nav-link text-white text-uppercase ml-5' to='/calendar'>Calendar</Link>
-          </li>
+          </li> */}
           <li className='nav-item'>
             <Link className='nav-link text-white text-uppercase ml-5' to='/jasons'>Jason's Deli Menu</Link>
           </li>

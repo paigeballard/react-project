@@ -23,10 +23,6 @@ code {
   border: none
 }
 
-.card-img-top {
-  /* object-fit: cover; */
-}
-
 :root {
   --space: 1.5em 0;
   --space: 2em 0;
@@ -41,6 +37,7 @@ code {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  align-items: center;
 }
 
 .Site-content {
@@ -55,4 +52,63 @@ code {
   margin-top: var(--spcae);
   height: 0;
   visibility: hidden;
+}
+
+.wrapper {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: space-between;
+}
+
+.sidebar {
+  border: 1px solid black;
+  padding: 15px;
+  margin-top: 2px;
+  margin-right: 2px;
+  background-color: #fff;
+  width: 40%;
+  height: 60vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  
+}
+
+.mainJason {
+  width: 60%;
+  padding: 15px;
+  /* height: 150vh; */
+}
+
+.fullName,
+.foodOrder {
+  padding: 10px;
+}
+
+.sidebarTwo {
+  flex-direction: row-reverse;
+  border: 1px solid black;
+  padding: 15px;
+  margin-top: 2px;
+  margin-right: 2px;
+  background-color: #fff;
+  width: 30%;
+  height: 50vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.mainRestaurant {
+  width: 60%;
+  padding: 15px;
+  /* height: 150vh; */
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
 }
